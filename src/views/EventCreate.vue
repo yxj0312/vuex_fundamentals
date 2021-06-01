@@ -73,9 +73,15 @@ export default {
   },
   methods: {
     onSubmit() {
-      this.event.id = uuidv4()
-      this.event.organizer = this.$store.state.user
-      EventService.postEvent(this.event)
+      // object spread operator
+      const event = {
+        ...this.event,
+        id: uuidv4(),
+        organizer: this.$store.state.user
+      }
+      // this.event.id = uuidv4()
+      // this.event.organizer = this.$store.state.user
+      EventService.postEvent(event)
         .then(() => {
           // add event to Vuex state
         })
