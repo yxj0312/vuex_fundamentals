@@ -39,6 +39,26 @@
       "date": "Exercitation tempor ",
       "time": "Facilis fugit numqu",
       "organizer": "Adam Jahr"
+    },
+    {
+      "id": "5007901e-f6ed-473c-827b-4fe9e5b16132",
+      "category": "community",
+      "title": "Eum quia voluptatem ",
+      "description": "Ipsum minus modi qua",
+      "location": "Earum ullamco deseru",
+      "date": "Sint ratione ad quo",
+      "time": "Magna sed quia tenet",
+      "organizer": "Adam Jahr"
+    },
+    {
+      "id": "52c55a89-85df-4dc7-a906-30fae93bf1c3",
+      "category": "community",
+      "title": "Cum quidem obcaecati",
+      "description": "Aut ad dolor ut volu",
+      "location": "Quis voluptatum ut a",
+      "date": "Modi esse minim ipsa",
+      "time": "Ut tempor sint excep",
+      "organizer": "Adam Jahr"
     }
   ]
 }
