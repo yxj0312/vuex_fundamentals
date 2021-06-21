@@ -84,13 +84,13 @@ export default {
       }
       // this.event.id = uuidv4()
       // this.event.organizer = this.$store.state.user
-      EventService.postEvent(event)
-        .then(() => {
-          this.$store.commit('ADD_EVENT', event)
-        })
-        .catch(error => {
-          console.log(error)
-        })
+      // EventService.postEvent(event)
+      //   .then(() => {
+      //     this.$store.commit('ADD_EVENT', event)
+      //   })
+      //   .catch(error => {
+      //     console.log(error)
+      //   })
     }
   }
 }
