@@ -21,6 +21,15 @@ export default createStore({
         .catch(error => {
           console.log(error)
         })
+    },
+    fetchEvents({ commit }) {
+      EventService.getEvents()
+        .then(response => {
+          commit('SET_EVENTS', response.data)
+        })
+        .catch(error => {
+          console.log(error)
+        })
     }
   },
   modules: {}
