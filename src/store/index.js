@@ -5,7 +5,8 @@ import EventService from '@/services/EventService.js'
 export default createStore({
   state: {
     user: 'Adam Jahr',
-    events: []
+    events: [],
+    event: {}
   },
   mutations: {
     ADD_EVENT(state, event) {
@@ -13,6 +14,9 @@ export default createStore({
     },
     SET_EVENTS(state, events) {
       state.events = events
+    },
+    SET_EVENT(state, event) {
+      state.event = event
     }
   },
   actions: {
@@ -29,6 +33,15 @@ export default createStore({
       EventService.getEvents()
         .then(response => {
           commit('SET_EVENTS', response.data)
+        })
+        .catch(error => {
+          console.log(error)
+        })
+    },
+    fetchEvent({ commit }, id) {
+      EventService.getEvent(id)
+        .then(response => {
+          commit('SET_EVENT', response.data)
         })
         .catch(error => {
           console.log(error)
