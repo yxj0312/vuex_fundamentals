@@ -16,6 +16,7 @@ export default {
   created() {
     this.$store.dispatch('fetchEvents')
   },
+  // we use computed here, because we want these events to be reactive
   computed: {
     events() {
       return this.$store.state.events
