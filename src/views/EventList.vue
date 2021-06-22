@@ -18,7 +18,9 @@ export default {
       events: null
     }
   },
-  created() {}
+  created() {
+    this.$store.dispatch('fetchEvents')
+  }
 }
 </script>
 
